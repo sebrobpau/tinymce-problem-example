@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import {useDispatch} from "react-redux";
 import styled from "styled-components";
+import {useSelector} from "react-redux";
 import Document from "./components/Document";
 import {resourceFetch} from "./redux/actions";
 
@@ -20,7 +21,7 @@ const App: React.FC = () => {
 
     useEffect(() => {
         dispatch(resourceFetch());
-    });
+    }, []);
 
     return (
         <Root>

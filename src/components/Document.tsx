@@ -14,6 +14,8 @@ const Document: React.FC = () => {
     const {root: mockRoot, elements: mockElements} = data;
     const documentMock = createEditable(mockElements[mockRoot], mockElements);
 
+   /*  const test = useSelector(state => state); */
+
     // Does not work
     /* const {root, elements} = useSelector((state: any) => state.document);
     const documentApi = createEditable(elements[root], elements);  */
